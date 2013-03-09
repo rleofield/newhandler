@@ -40,5 +40,8 @@ QMAKE_CXXFLAGS_RELEASE += -Weffc++
 
 SOURCES +=     src/main.cpp
 
+OTHER_FILES += \
+    README.md
+
 
 
