@@ -5,7 +5,7 @@ CONFIG += console
 CONFIG -= qt
 
 
-DESTDIR += bin
+#DESTDIR += bin
 CONFIG  += x86_64
 
 
@@ -14,6 +14,8 @@ MOC_DIR = .tmp
 UI_DIR = .tmp
 RCC_DIR = .tmp
 
+
+QMAKE_CXXFLAGS += -gdwarf-3
 
 QMAKE_CXXFLAGS_DEBUG += -O0
 QMAKE_CXXFLAGS_DEBUG += -std=c++0x
@@ -38,10 +40,12 @@ QMAKE_CXXFLAGS_RELEASE += -Wunused-variable
 QMAKE_CXXFLAGS_RELEASE += -Weffc++
 
 
-SOURCES +=     src/main.cpp
+SOURCES +=     src/main.cpp \
+    src/github.cpp
 
 OTHER_FILES += \
     README.md
 
 
 
+message("qmake newhandler")
