@@ -125,7 +125,7 @@ void doNewExceptionDemo( void ) {
          // Was nun?
          // Anderen Speicher freigeben und new() wiederholen? Wie?
          // Oder:
-         // Logzeile schreiben, wenn noch moeglich und mit abort() das Programm verlassen
+         // Logzeile schreiben, wenn noch möglich und mit abort() das Programm verlassen
          abort();
       }
    }
