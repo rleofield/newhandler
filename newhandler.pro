@@ -43,7 +43,8 @@ QMAKE_CXXFLAGS_RELEASE += -Weffc++
 SOURCES +=     src/main.cpp
 
 OTHER_FILES += \
-    README.md
+    README.md \
+    lgpl-3.0.txt
 
 
 
