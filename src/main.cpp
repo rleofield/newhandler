@@ -86,7 +86,7 @@ namespace local {
 void doNewHandlerDemo( void ) {
 
    void ( *oldNewHandler )() = set_new_handler( DemoNewHandler );
-   char* p = 0;
+   char* p = nullptr;
 
    for( size_t i = 0; i < local::count; i++ ) {
       try {
@@ -97,7 +97,7 @@ void doNewHandlerDemo( void ) {
          exit( 0 );
       }
 
-      if( p == 0 ) {
+      if( p == nullptr ) {
          // wird nie erreicht
          cout << "test" << endl;
       }

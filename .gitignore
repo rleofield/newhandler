@@ -5,3 +5,6 @@ newhandler
 /*.pro.user
 /Makefile
 /bin/
+*.qmake.stash
+/newhandler.pro.user.4.8-pre1
+/newhandler.pro.user.6837e30
